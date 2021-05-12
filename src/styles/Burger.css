@@ -1,0 +1,45 @@
+.burger {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  color: #444;
+  font-size: 2rem;
+  transform: scaleX(1.1) scale(1) rotate(0deg);
+  transition: .3s;
+  z-index: 2;
+}
+
+.burger.active {
+  transform: scaleX(1.1) scale(1.2) rotate(180deg);
+  color: #0e46ff;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+  .burger {
+    right: 2rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+  .burger {
+    font-size: 2.4rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+  .burger {
+    top: 3rem;
+    right: 3.5rem;
+    font-size: 3.6rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .burger {
+    display: none;
+  }
+}

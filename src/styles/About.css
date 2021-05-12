@@ -1,0 +1,136 @@
+.about article h1 {
+  text-align: center;
+  font-size: var(--font-size-300px-h1);
+  font-family: 'Bree Serif', serif;
+}
+
+.about article {
+  margin: 1rem 0;
+  padding: 0 2rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-size: var(--font-size-300px);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.about article p {
+  margin-top: 1rem;
+}
+
+.about img {
+  width: 100%;
+  height: 100%;
+  margin: 1rem 0;
+  padding: 0 2rem;
+  /* do usuniecia border, zdj do przyciecia  */
+  border: 1px solid black;
+}
+
+.about article span.signature {
+  display: block;
+  margin: 1rem 0 2rem 0;
+  padding-right: 2rem;
+  text-align: right;
+  font-size: var(--font-size-300px-span);
+  font-family: 'Satisfy', cursive;
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+  .about article h1 {
+    font-size: var(--font-size-400px-h1);
+  }
+
+  .about article {
+    margin: 0;
+    padding: 0 2rem;
+    font-size: var(--font-size-400px);
+  }
+
+  .about article p {
+    margin-top: 2rem;
+  }
+
+  .about img {
+    width: 90%;
+    padding: 0;
+    /* do usuniecia border, zdj do przyciecia  */
+    /* border: 1px solid black; */
+    border: none;
+  }
+
+  .about article span.signature {
+    margin: 2rem 0 2rem 0;
+    padding-right: 3rem;
+    font-size: var(--font-size-400px);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+  .about article h1 {
+    font-size: var(--font-size-760px-h1);
+  }
+
+  .about article {
+    margin: 2rem 0;
+    padding: 0 4rem;
+    font-size: var(--font-size-760px);
+  }
+
+  .about article p {
+    margin-top: 2rem;
+  }
+
+  .about img {
+    width: 90%;
+    padding: 5rem 5rem;
+    /* do usuniecia border, zdj do przyciecia  */
+    /* border: 1px solid black; */
+    border: none;
+  }
+
+  .about article span.signature {
+    margin: 3rem 0 4rem 0;
+    padding-right: 8rem;
+    font-size: var(--font-size-760px-span);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .about {
+    display: flex;
+  }
+
+  .about article h1 {
+    margin: 0 auto 2rem auto;
+    width: calc(50vw - 8rem);
+    font-size: var(--font-size-1024px-h1);
+  }
+
+  .about article {
+    margin: 2rem auto;
+    padding: 0 2rem;
+    width: 50vw;
+    font-size: var(--font-size-1024px);
+  }
+
+  .about article p {
+    margin-top: 2rem;
+  }
+
+  .about img {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    /* do usuniecia border, zdj do przyciecia  */
+    /* border: 1px solid black; */
+    border: none;
+  }
+
+  .about article span.signature {
+    margin: 3rem 0 4rem 0;
+    padding-right: 0;
+    font-size: var(--font-size-1024px-span);
+  }
+}

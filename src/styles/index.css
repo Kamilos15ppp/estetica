@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans+Condensed:wght@300&family=Satisfy&display=swap');
+
+/* 
+font-family: 'Bree Serif', serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Satisfy', cursive;
+ */
+
+:root {
+  --font-size-300px: 1.5rem;
+  --font-size-300px-span: 1.4rem;
+  --font-size-300px-h1: 2rem;
+  --font-size-400px: 1.7rem;
+  --font-size-400px-span: 1.8rem;
+  --font-size-400px-h1: 2.5rem;
+  --font-size-760px: 2.7rem;
+  --font-size-760px-span: 2.4rem;
+  --font-size-760px-h1: 4rem;
+  --font-size-1024px: 2.5rem;
+  --font-size-1024px-span: 2.4rem;
+  --font-size-1024px-h1: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}

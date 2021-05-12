@@ -1,0 +1,123 @@
+.info article h1 {
+  padding: 0 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size-300px-h1);
+  font-family: 'Bree Serif', serif;
+}
+
+.info article p,
+.info p {
+  margin: 1rem 0;
+  padding: 0 2rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-size: var(--font-size-300px);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.info p {
+  text-align: center;
+}
+
+.info img {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 2rem;
+  /* do usuniecia border, zdj do przyciecia  */
+  border: 1px solid black;
+}
+
+.info span {
+  display: block;
+  margin: 1rem 0 2rem 0;
+  padding-right: 7rem;
+  text-align: right;
+  font-size: var(--font-size-300px-span);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.info a {
+  text-decoration: underline;
+  color: black;
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+  .info article h1 {
+    font-size: var(--font-size-400px-h1);
+  }
+
+  .info article p,
+  .info p {
+    margin: 0;
+    padding: 0 2rem;
+    font-size: var(--font-size-400px);
+  }
+
+  .info article p {
+    margin-top: 2rem;
+  }
+
+  .info img {
+    padding: 2rem 2rem;
+  }
+
+  .info span {
+    margin: 2rem 0;
+    padding-right: 8rem;
+    font-size: var(--font-size-400px-span);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+  .info article h1 {
+    font-size: var(--font-size-760px-h1);
+  }
+
+  .info article p,
+  .info p {
+    margin: 2rem 0;
+    padding: 0 4rem;
+    font-size: var(--font-size-760px);
+  }
+
+  .info span {
+    margin: 3rem 0;
+    padding-right: 14rem;
+    font-size: var(--font-size-760px);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info article h1 {
+    font-size: var(--font-size-1024px-h1);
+  }
+
+  .info article p,
+  .info p {
+    margin: 2rem auto;
+    padding: 0 10rem;
+    font-size: var(--font-size-1024px);
+  }
+
+  .info img {
+    /* height do usuniecia */
+    height: 35rem;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .info span {
+    margin: 1rem auto 4rem auto;
+    text-align: center;
+    padding-right: 0;
+    font-size: var(--font-size-1024px);
+  }
+}

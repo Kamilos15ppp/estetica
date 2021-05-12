@@ -1,0 +1,19 @@
+header {
+  position: relative;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  header {
+    position: static;
+  }
+}

@@ -1,0 +1,117 @@
+.voucher h1 {
+  padding: 0 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size-300px-h1);
+  font-family: 'Bree Serif', serif;
+}
+
+.voucher img {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 2rem;
+  /* do usuniecia border, zdj do przyciecia  */
+  border: 1px solid black;
+}
+
+.voucher article,
+.voucher article p,
+.voucher p {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-size: var(--font-size-300px);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.voucher article ul {
+  padding: 1rem 1rem 1rem 3rem;
+  list-style: circle;
+}
+
+.voucher p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+  .voucher h1 {
+    font-size: var(--font-size-400px-h1);
+  }
+
+  .voucher img {
+    width: 90%;
+    padding: 2rem 2rem;
+  }
+
+  .voucher article,
+  .voucher article p,
+  .voucher p {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    font-size: var(--font-size-400px);
+  }
+
+  .voucher article ul {
+    padding: 1rem 1rem 1rem 4rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+  .voucher h1 {
+    font-size: var(--font-size-760px-h1);
+  }
+
+  .voucher article,
+  .voucher article p,
+  .voucher p {
+    margin: 2rem 0;
+    padding: 0 2rem;
+    font-size: var(--font-size-760px);
+  }
+
+  .voucher article ul {
+    padding: 1rem 1rem 1rem 6rem;
+  }
+
+  .voucher p {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .voucher {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .voucher h1 {
+    font-size: var(--font-size-1024px-h1);
+  }
+
+  .voucher img {
+    width: 60%;
+    margin: 1rem auto;
+    padding: 0 2rem;
+  }
+
+  .voucher article,
+  .voucher article p,
+  .voucher p {
+    margin: 2rem auto;
+    padding: 0 3rem;
+    font-size: var(--font-size-1024px);
+  }
+
+  .voucher article ul {
+    padding: 1rem 1rem 1rem 7rem;
+  }
+
+  .voucher p {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+}

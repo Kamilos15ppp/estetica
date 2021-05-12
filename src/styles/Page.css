@@ -1,0 +1,49 @@
+.arrow-scroll-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 4rem;
+  /* animation: fadeIn 0.7s ease-in-out 1s both; */
+  cursor: pointer;
+  color: #285aff9a;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+  .arrow-scroll-to-top {
+    font-size: 5rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+  .arrow-scroll-to-top {
+    right: 2rem;
+    font-size: 6rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+  .arrow-scroll-to-top {
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 8.5rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .arrow-scroll-to-top {
+    bottom: 6rem;
+    right: 6rem;
+    font-size: 8.5rem;
+  }
+}

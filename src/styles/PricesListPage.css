@@ -1,0 +1,102 @@
+.prices-list {
+  height: 100%;
+}
+
+.prices-list article h1 {
+  padding: 0 1erm;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size-300px-h1);
+  font-family: 'Bree Serif', serif;
+}
+
+.prices-list ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  height: 100%;
+  list-style: none;
+}
+
+.prices-list ul li {
+  flex-basis: 50%;
+  display: block;
+}
+
+.prices-list ul li a {
+  display: block;
+  padding: 1rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+}
+
+.prices-list ul li a img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+  .prices-list article h1 {
+    font-size: var(--font-size-400px-h1);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+  .prices-list article h1 {
+    font-size: var(--font-size-760px-h1);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .prices-list article h1 {
+    font-size: var(--font-size-1024px-h1);
+  }
+
+  .prices-list ul {
+    overflow: hidden;
+  }
+
+  .prices-list ul li {
+    flex-basis: 30%;
+  }
+
+  .prices-list ul li a img {
+    width: 90%;
+  }
+
+  .prices-list li:nth-of-type(1),
+  .prices-list li:nth-of-type(2),
+  .prices-list li:nth-of-type(3) {
+    transform: translateX(-110vw);
+    animation: slide1 2.5s ease 1 both;
+  }
+
+  .prices-list li:nth-of-type(4),
+  .prices-list li:nth-of-type(5) {
+    transform: translateX(+110vw);
+    animation: slide2 2.5s ease 1 both;
+  }
+
+  @keyframes slide1 {
+    from {
+      transform: translateX(-110vw);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide2 {
+    from {
+      transform: translateX(+ 110vw);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+}

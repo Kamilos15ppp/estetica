@@ -1,0 +1,251 @@
+.contact h1 {
+  padding: 0 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size-300px-h1);
+  font-family: 'Bree Serif', serif;
+}
+
+.contact p {
+  margin: 2rem 0;
+  padding: 0 2rem;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: var(--font-size-300px);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.contact h1+p+p {
+  line-height: .6;
+  margin: 1rem 0;
+}
+
+.contact span {
+  display: block;
+  margin: 1.5rem 0 1rem 0;
+  font-weight: bold;
+  font-size: var(--font-size-300px-span);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.contact a {
+  text-decoration: underline;
+  color: black;
+}
+
+.contact span+span {
+  font-weight: normal;
+}
+
+.contact span+span,
+.contact span>span {
+  display: inline;
+}
+
+.contact span>span {
+  margin-left: .5rem;
+  font-weight: bold;
+}
+
+.contact span+p {
+  margin-top: 3rem;
+}
+
+.contact span+p+div {
+  margin-top: 3rem;
+}
+
+.contact span+p+div>p {
+  margin: .5rem;
+}
+
+/* .contact h1+p+p+span {
+  animation: zoomin 2s ease infinite both;
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+} */
+
+.map iframe {
+  padding: 1rem;
+  width: 30rem;
+  height: 26rem;
+  border: 0;
+  border-radius: 2rem;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+  .map iframe {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 0;
+    width: 32rem;
+    height: 26rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+  .contact h1 {
+    font-size: var(--font-size-400px-h1);
+  }
+
+  .contact p {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    font-size: var(--font-size-400px);
+  }
+
+  .contact span {
+    margin: 2rem 0 1rem 0;
+    font-size: var(--font-size-400px-span);
+  }
+
+  .contact span>span {
+    margin-left: 1rem;
+  }
+
+  .contact span+p {
+    margin-top: 2.5rem;
+  }
+
+  .contact span+p+div {
+    margin-top: 1.5rem;
+  }
+
+  .contact span+p+div>p {
+    margin: .5rem;
+  }
+
+  .map iframe {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    width: 35rem;
+    height: 28rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+  .contact h1 {
+    font-size: var(--font-size-760px-h1);
+  }
+
+  .contact p {
+    margin: 2rem 0;
+    padding: 0 2rem;
+    font-size: var(--font-size-760px);
+  }
+
+  .contact span {
+    margin: 2rem 0 1rem 0;
+    font-size: var(--font-size-760px);
+  }
+
+  .contact span>span {
+    margin-left: 1rem;
+  }
+
+  .contact span+p {
+    margin-top: 2.5rem;
+  }
+
+  .contact span+p+div {
+    margin-top: 1.5rem;
+  }
+
+  .contact span+p+div>p {
+    margin: .5rem;
+  }
+
+  .map iframe {
+    margin-top: 1rem;
+    width: 60rem;
+    height: 45rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact h1 {
+    font-size: var(--font-size-1024px-h1);
+  }
+
+  .contact p {
+    margin: 2rem auto;
+    padding: 0 2rem;
+    font-size: var(--font-size-1024px);
+  }
+
+  .contact span {
+    margin: 2rem 0 1rem 0;
+    font-size: var(--font-size-1024px);
+    transition: .5s;
+  }
+
+  .contact h1+p+p+span:hover {
+    animation-play-state: paused;
+  }
+
+  .contact span>span {
+    margin-left: 1rem;
+  }
+
+  .contact span+p {
+    margin-top: 2.5rem;
+  }
+
+  .contact span+p+div {
+    margin-top: 1.5rem;
+  }
+
+  .contact span+p+div>p {
+    margin: .5rem;
+  }
+
+  .map {
+    margin: auto 0;
+    /* overflow: hidden; */
+  }
+
+  .map iframe {
+    margin-top: 1rem;
+    width: 60rem;
+    height: 45rem;
+    /* transform: translateX(-110vw);
+    animation: slide 2s ease 1 both; */
+  }
+
+  /* 
+  @keyframes slide {
+    from {
+      transform: translateX(-110vw);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  } */
+}
