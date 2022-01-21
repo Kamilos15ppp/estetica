@@ -2,7 +2,9 @@
 
 This is my first project in React JS what I created.\
 Single Page Application created for beauty salon.\
-I used technologies such as HTML, CSS and JavaScript (React-CRA).\
+I used technologies such as HTML, CSS and JavaScript (React-CRA).
+
+## See the page
 You can see the website [here](https://estetica.netlify.app/).
 
 ## How to run project in local environment?
